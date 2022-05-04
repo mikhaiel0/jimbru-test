@@ -1,5 +1,5 @@
 {
-  "name": "CheemsBot",
+  "name": "Jimbru v4.1",
   "version": "2.0.0",
   "description": "WhatsApp Using Lib Baileys Multi Device",
   "main": "index.js",
@@ -64,7 +64,7 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DGXeon/CheemsBot-MD2.git"
+    "url": "git+https://github.com/Mikhaiel/Jimbru-v4.1.git"
   },
   "bugs": {
     "url": "https://github.com/DGXeon/CheemsBot-MD2/issues"
