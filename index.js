@@ -86,7 +86,7 @@ async function startJimbruOffical() {
         if (!JimbruOffical.public && !mek.key.fromMe && chatUpdate.type === 'notify') return
         if (mek.key.id.startsWith('BAE5') && mek.key.id.length === 16) return
         m = smsg(JimbruOffical, mek, store)
-        require("./jimbru")(JimbruOffical, m, chatUpdate, store)
+        require("./Jimbru")(JimbruOffical, m, chatUpdate, store)
         } catch (err) {
             console.log(err)
         }
