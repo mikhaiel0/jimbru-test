@@ -206,11 +206,11 @@ module.exports = JimbruOffical = async (JimbruOffical, m, chatUpdate, store) => 
 	// ɢʀᴏᴜᴘ ᴛᴀʀɢᴇᴛ \\
 	
 const reply = (teks) => {
-            JimbruOffical.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/Jimbru.jpg`),"sourceUrl": "https://chat.whatsapp.com/LS1Xx3fSqg7FpSYSjKWhL5"}}}, { quoted: m})
+            JimbruOffical.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botnma}`,"body": ` Follow Bot's Official Developer`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/Jimbru.jpg`),"sourceUrl": "https://instagram.com/the_real_mikhaiel"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            JimbruOffical.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Join Bot's Official GC`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/Jimbru.jpg`),"sourceUrl": "https://chat.whatsapp.com/HYj9wu5Jrv6CROxyeQbHoS"}}}, { quoted: m})
+            JimbruOffical.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` Follow Bot's Official Developer`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/Jimbru.jpg`),"sourceUrl": "https://instagram.com/the_real_mikhaiel"}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -3311,7 +3311,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                         }
                     }
                 }), { userJid: m.chat })
-                XeonBotInc.relayMessage(m.chat, template.message, { messageId: template.key.id })
+                JimbruOffical.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
             case 'list': case 'menu': case 'help': case '?': {
