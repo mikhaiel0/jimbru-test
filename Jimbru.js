@@ -1928,7 +1928,7 @@ break
             break
 	//addvn	
 		case 'addvn':
-					if (!isOwner && !mek.key.fromMe) return reply(mess.owner)
+					if (!isCreator && !mek.key.fromMe) return reply(mess.owner)
 					if (!isQuotedAudio) return reply('Reply audio')
 					nm = body.slice(7)
 					if (!nm) return reply('Whats the vn name??')
@@ -1940,7 +1940,7 @@ break
 					JimbruOffical.sendMessage(from, `Success, please check with *${prefix}vnlist*`, MessageType.text, { quoted: mek })
 					break
 					case 'delvn':
-					if (!isOwner && !mek.key.fromMe) return reply(mess.owner)
+					if (!isCreator && !mek.key.fromMe) return reply(mess.owner)
 					try {
 					 nmm = body.slice(7)
 					 wanudelvn = vien.indexOf(nmm)
