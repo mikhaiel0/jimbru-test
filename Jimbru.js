@@ -1926,6 +1926,42 @@ break
                 })
             }
             break
+	//addvn	
+		case 'addvn':
+					if (!isOwner && !mek.key.fromMe) return reply(mess.owner)
+					if (!isQuotedAudio) return reply('Reply audio')
+					nm = body.slice(7)
+					if (!nm) return reply('Whats the vn name??')
+					boij = JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo
+					delb = await JimbruOffical.downloadMediaMessage(boij)
+					vien.push(`${nm}`)
+					fs.writeFileSync(`./media/vn/${nm}.mp3`, delb)
+					fs.writeFileSync('./database/vien.json', JSON.stringify(vien))
+					JimbruOffical.sendMessage(from, `Success, please check with *${prefix}vnlist*`, MessageType.text, { quoted: mek })
+					break
+					case 'delvn':
+					if (!isOwner && !mek.key.fromMe) return reply(mess.owner)
+					try {
+					 nmm = body.slice(7)
+					 wanudelvn = vien.indexOf(nmm)
+					 vien.splice(wanudelvn, 1)
+					 fs.unlinkSync(`./media/vn/${nmm}.mp3`)
+					reply(`Successfully deleted vn ${body.slice(7)}`)
+					} catch (err){
+						console.log(err)
+						reply(mess.error.api)
+					}
+					break
+					case 'vnlist':
+				case 'listvn':
+					teks = '*VN List :*\n\n'
+					for (let awokwkwk of vien) {
+						teks += `- ${awokwkwk}\n`
+					}
+					teks += `\n*Total : ${vien.length}*\n\n_To retrieve the vn, please reply to this message with the caption of the vn name_`
+					JimbruOffical.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": vien } })
+					break
+		
 	        case 'tomp4': case 'tovideo': {
                 if (!quoted) reply(`Reply Image`)
                 if (!/webp/.test(mime)) return replay(`Reply Sticker With Caption *${prefix + command}*`)
@@ -3568,6 +3604,7 @@ case 'allmenu': {
 ┃╠ ${prefix}report [bug]
 ┃╠═══════✪「 OWNER 」	
 ┃╠ ${prefix}chat [option]
+   ${prefix}addvn _Reply audio with caption_
 ┃╠ ${prefix}join [link]
 ┃╠ ${prefix}leave
 ┃╠ ${prefix}block [user]
