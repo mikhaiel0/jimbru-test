@@ -145,16 +145,12 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
                 if (anu.action == 'add') {
                     JimbruOffical.sendMessage(anu.id, { image: Kon, contextInfo: { mentionedJid: [num] }, caption: `
 ◈ ʜᴇʏ 👋 @${num.split("@")[0]},
-
 ◈ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ${metadata.subject}
-
 ◈ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ : ${metadata.desc}
-
 ◈ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ ᴀʀᴇ ᴀʟꜱᴏ ʟɪᴋᴇ ꜰᴀᴍɪʟʏ ꜱᴏ ʏᴏᴜ ʜᴀᴠᴇ ʙᴇᴄᴏᴍᴇ ᴀ ᴘᴀʀᴛ ᴏꜰ ᴏᴜʀ ꜰᴀᴍɪʟʏ ᴡʜɪᴄʜ ɪ ᴀᴍ ᴠᴇʀʏ ʜᴀᴘᴘʏ ᴀɴᴅ ɪ ᴡᴇʟᴄᴏᴍᴇ ʏᴏᴜ ᴛᴏ ᴍʏ ɢʀᴏᴜᴘ. ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ᴄᴏɴꜱɪᴅᴇʀɪɴɢ ᴏᴜʀ ɢʀᴏᴜᴘ ᴡᴏʀᴛʜʏ ᴀɴᴅ ᴊᴏɪɴᴇᴅ ᴛᴏɢᴇᴛʜᴇʀ !!`} )
                 } else if (anu.action == 'remove') {
                     JimbruOffical.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `◈ @${num.split("@")[0]} Left ${metadata.subject}
-
-👣 ᴍᴀʏ ɢᴏᴅ ʙʟᴇꜱꜱ ʏᴏᴜ ᴀɴᴅ ʜᴇʟᴘ ʏᴏᴜ ᴀᴄʜɪᴇᴠᴇ ʏᴏᴜʀ ᴅʀᴇᴀᴍꜱ. ᴅᴏ ɴᴏᴛ ꜰᴏʀɢᴇᴛ ᴜꜱ. ᴡᴇ ᴡɪʟʟ ᴀʟᴡᴀʏꜱ ʙᴇ ᴛʜᴇʀᴇ ꜰᴏʀ ʏᴏᴜ ᴡʜᴇɴᴇᴠᴇʀ ʏᴏᴜ ɴᴇᴇᴅ ᴜꜱ` })
+ᴍᴀʏ ɢᴏᴅ ʙʟᴇꜱꜱ ʏᴏᴜ ᴀɴᴅ ʜᴇʟᴘ ʏᴏᴜ ᴀᴄʜɪᴇᴠᴇ ʏᴏᴜʀ ᴅʀᴇᴀᴍꜱ. ᴅᴏ ɴᴏᴛ ꜰᴏʀɢᴇᴛ ᴜꜱ. ᴡᴇ ᴡɪʟʟ ᴀʟᴡᴀʏꜱ ʙᴇ ᴛʜᴇʀᴇ ꜰᴏʀ ʏᴏᴜ ᴡʜᴇɴᴇᴠᴇʀ ʏᴏᴜ ɴᴇᴇᴅ ᴜꜱ` })
                 }
             }
         } catch (err) {
