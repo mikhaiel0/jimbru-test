@@ -137,7 +137,7 @@ async function startJimbruOffical() {
 
 //welcome\\
                 if (anu.action == 'add') {
-                    JimbruOffical.sendMessage(anu.id, { url: ppuser, contextInfo: { mentionedJid: [num] }, caption: `
+                    JimbruOffical.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `
 ◈ ʜᴇʏ 👋 @${num.split("@")[0]},
 
 ◈ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ${metadata.subject}
@@ -146,7 +146,7 @@ async function startJimbruOffical() {
 
 ◈ ᴛʜᴇ ᴍᴇᴍʙᴇʀꜱ ᴏꜰ ᴛʜᴇ ɢʀᴏᴜᴘ ᴀʀᴇ ᴀʟꜱᴏ ʟɪᴋᴇ ꜰᴀᴍɪʟʏ ꜱᴏ ʏᴏᴜ ʜᴀᴠᴇ ʙᴇᴄᴏᴍᴇ ᴀ ᴘᴀʀᴛ ᴏꜰ ᴏᴜʀ ꜰᴀᴍɪʟʏ ᴡʜɪᴄʜ ɪ ᴀᴍ ᴠᴇʀʏ ʜᴀᴘᴘʏ ᴀɴᴅ ɪ ᴡᴇʟᴄᴏᴍᴇ ʏᴏᴜ ᴛᴏ ᴍʏ ɢʀᴏᴜᴘ. ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ᴄᴏɴꜱɪᴅᴇʀɪɴɢ ᴏᴜʀ ɢʀᴏᴜᴘ ᴡᴏʀᴛʜʏ ᴀɴᴅ ᴊᴏɪɴᴇᴅ ᴛᴏɢᴇᴛʜᴇʀ !!`} )
                 } else if (anu.action == 'remove') {
-                    JimbruOffical.sendMessage(anu.id, { url: ppuser, contextInfo: { mentionedJid: [num] }, caption: `◈ @${num.split("@")[0]} Left ${metadata.subject}
+                    JimbruOffical.sendMessage(anu.id, { image: { url: ppuser }, contextInfo: { mentionedJid: [num] }, caption: `◈ @${num.split("@")[0]} Left ${metadata.subject}
 ᴍᴀʏ ɢᴏᴅ ʙʟᴇꜱꜱ ʏᴏᴜ ᴀɴᴅ ʜᴇʟᴘ ʏᴏᴜ ᴀᴄʜɪᴇᴠᴇ ʏᴏᴜʀ ᴅʀᴇᴀᴍꜱ. ᴅᴏ ɴᴏᴛ ꜰᴏʀɢᴇᴛ ᴜꜱ. ᴡᴇ ᴡɪʟʟ ᴀʟᴡᴀʏꜱ ʙᴇ ᴛʜᴇʀᴇ ꜰᴏʀ ʏᴏᴜ ᴡʜᴇɴᴇᴠᴇʀ ʏᴏᴜ ɴᴇᴇᴅ ᴜꜱ` })
                 }
             }
