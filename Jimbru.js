@@ -2721,7 +2721,7 @@ case 'webtonsearch': case 'webtoon':
                 JimbruOffical.sendMessage(m.chat, { audio: { url: anu.result.audio }, mimetype: 'audio/mpeg'}, { quoted: msg })
             }
             break
-		case 'insta': case 'ig': {
+		case 'insta': {
                                       try{
                 const { instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scraper')
                 let tes = text ? text : m.quoted && m.quoted.text
@@ -2734,14 +2734,31 @@ case 'webtonsearch': case 'webtoon':
                 JimbruOffical.sendMessage(m.chat, { text :  'Invalid Url' }, {quoted : false})}
                }
             break
-		//Backup, for example, the video above doesn't come out\\
-		case 'igeh': case 'instagram2': case 'ig2': case 'igdl2': {
-                if (!text) return reply(`Enter Query Link!`)
-                reply(mess.wait)
-                
-                let anu = await fetchJson(api('zenz', '/downloader/instagram2', { url:text }, 'apikey'))
-                JimbruOffical.sendMessage(m.chat, { video: { url: anu.data[0] } }, { quoted: m })
-            }
+		case 'reel': {
+                                      try{
+                const { instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scraper')
+                let tes = text ? text : m.quoted && m.quoted.text
+                let a = await instagramdl(tes)
+                let urla = a[0].url
+                await JimbruOffical.sendMessage(m.chat, { text : 'Please Wait...' }, {quoted : false})
+                for(let { thumbnail, url } of a)
+                JimbruOffical.sendFileUrl(m.chat, urla, 'Downloaded From Instagram', false)
+                } catch (err) {
+                JimbruOffical.sendMessage(m.chat, { text :  'Invalid Url' }, {quoted : false})}
+               }
+            break
+		case 'ig': {
+                                      try{
+                const { instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scraper')
+                let tes = text ? text : m.quoted && m.quoted.text
+                let a = await instagramdlv2(tes)
+                let urla = a[0].url
+                await JimbruOffical.sendMessage(m.chat, { text : 'Please Wait...' }, {quoted : false})
+                for(let { thumbnail, url } of a)
+                JimbruOffical.sendFileUrl(m.chat, urla, 'Downloaded From Instagram', false)
+                } catch (err) {
+                JimbruOffical.sendMessage(m.chat, { text :  'Invalid Url' }, {quoted : false})}
+               }
             break
             case 'joox': case 'jooxdl': {
                 if (!text) return reply(`No Query Title`)
