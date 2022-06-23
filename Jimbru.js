@@ -2818,7 +2818,7 @@ case 'webtonsearch': case 'webtoon':
                 let tes = text ? text : m.quoted && m.quoted.text
                 let a = await aiovideodl(tes)
                 let urla = a[0].url
-                await JimbruOffical.sendMessage(m.chat, { text : 'Please Wait I'm searching' }, {quoted : false})
+                await JimbruOffical.sendMessage(m.chat, { text : 'Please Wait Im Searching' }, {quoted : false})
                 for(let { thumbnail, url } of a)
                 JimbruOffical.sendFileUrl(m.chat, urla, 'Downloaded From Facebook', false)
                 } catch (err) {
@@ -2831,7 +2831,7 @@ case 'webtonsearch': case 'webtoon':
                 let tes = text ? text : m.quoted && m.quoted.text
                 let a = await savefrom(tes)
                 let urla = a[0].url
-                await JimbruOffical.sendMessage(m.chat, { text : 'Please Wait im searching' }, {quoted : false})
+                await JimbruOffical.sendMessage(m.chat, { text : 'Please Wait Im Searching' }, {quoted : false})
                 for(let { thumbnail, url } of a)
                 JimbruOffical.sendFileUrl(m.chat, urla, 'Downloaded From facebook', false)
                 } catch (err) {
