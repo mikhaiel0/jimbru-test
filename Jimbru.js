@@ -2810,13 +2810,34 @@ case 'webtonsearch': case 'webtoon':
                 let msg = await JimbruOffical.sendMessage(m.chat, buttonMessage, { quoted: m })
                 JimbruOffical.sendMessage(m.chat, { audio: { url: anu.result.audio } }, { quoted: msg })
             }
+
             break
-	        case 'fbdl': case 'fb': case 'facebook': {
-                if (!text) return reply(`Enter Query Link!`)
-                reply(mess.wait)
-                let anu = await fetchJson(api('zenz', '/api/downloader/facebook', { url: text }, 'apikey'))
-                JimbruOffical.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `◈ Title : ${anu.result.title}`}, { quoted: m })
-            }
+            case 'fb': {
+                                      try{
+                const { aiovideodl, savefrom } = require('@bochilteam/scraper')
+                let tes = text ? text : m.quoted && m.quoted.text
+                let a = await aiovideodl(tes)
+                let urla = a[0].url
+                await JimbruOffical.sendMessage(m.chat, { text : 'Please Wait I'm searching' }, {quoted : false})
+                for(let { thumbnail, url } of a)
+                JimbruOffical.sendFileUrl(m.chat, urla, 'Downloaded From Facebook', false)
+                } catch (err) {
+                JimbruOffical.sendMessage(m.chat, { text :  'Invalid Url' }, {quoted : false})}
+               }
+            break
+            case 'facebook': {
+                                      try{
+                const { aiovideodl, savefrom } = require('@bochilteam/scraper')
+                let tes = text ? text : m.quoted && m.quoted.text
+                let a = await savefrom(tes)
+                let urla = a[0].url
+                await JimbruOffical.sendMessage(m.chat, { text : 'Please Wait im searching' }, {quoted : false})
+                for(let { thumbnail, url } of a)
+                JimbruOffical.sendFileUrl(m.chat, urla, 'Downloaded From facebook', false)
+                } catch (err) {
+                JimbruOffical.sendMessage(m.chat, { text :  'Invalid Url' }, {quoted : false})}
+               }
+            
             break
 	        case 'pindl': case 'pinterestdl': {
                 if (!text) return reply(`Enter Query Link!`)
