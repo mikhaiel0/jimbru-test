@@ -13,6 +13,7 @@ const axios = require('axios')
 const path = require('path')
 const os = require('os')
 const moment = require('moment-timezone')
+const { aiovideodl, savefrom, instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scraper')
 const { JSDOM } = require('jsdom')
 const speed = require('performance-now')
 const { performance } = require('perf_hooks')
@@ -2722,8 +2723,7 @@ case 'webtonsearch': case 'webtoon':
             }
             break
 		case 'insta': {
-                                      try{
-                const { instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scraper')
+                           try{
                 let tes = text ? text : m.quoted && m.quoted.text
                 let a = await instagramdlv3(tes)
                 let urla = a[0].url
@@ -2735,8 +2735,7 @@ case 'webtonsearch': case 'webtoon':
                }
             break
 		case 'reel': {
-                                      try{
-                const { instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scraper')
+                          try{
                 let tes = text ? text : m.quoted && m.quoted.text
                 let a = await instagramdl(tes)
                 let urla = a[0].url
@@ -2748,8 +2747,7 @@ case 'webtonsearch': case 'webtoon':
                }
             break
 		case 'ig': {
-                                      try{
-                const { instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scraper')
+                        try{
                 let tes = text ? text : m.quoted && m.quoted.text
                 let a = await instagramdlv2(tes)
                 let urla = a[0].url
@@ -2813,8 +2811,7 @@ case 'webtonsearch': case 'webtoon':
 
             break
             case 'fb': {
-                                      try{
-                const { aiovideodl, savefrom } = require('@bochilteam/scraper')
+                    try{
                 let tes = text ? text : m.quoted && m.quoted.text
                 let a = await aiovideodl(tes)
                 let urla = a[0].url
@@ -2826,8 +2823,7 @@ case 'webtonsearch': case 'webtoon':
                }
             break
             case 'facebook': {
-                                      try{
-                const { aiovideodl, savefrom } = require('@bochilteam/scraper')
+                          try{
                 let tes = text ? text : m.quoted && m.quoted.text
                 let a = await savefrom(tes)
                 let urla = a[0].url
