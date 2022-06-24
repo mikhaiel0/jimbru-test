@@ -117,7 +117,7 @@ async function startJimbruOffical() {
     })
 
     JimbruOffical.ev.on('group-participants.update', async (anu) => {
-        // console.log(anu)
+        console.log(anu)
         try {
             let metadata = await JimbruOffical.groupMetadata(anu.id)
             let participants = anu.participants
