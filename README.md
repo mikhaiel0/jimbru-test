@@ -29,9 +29,14 @@ heroku/nodejs
 ```
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mikhaiel0/JIMBRU-v4.1/)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmikhaiel0%2FJIMBRU-v4.1.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmikhaiel0%2FJIMBRU-v4.1?ref=badge_shield)
 
 
 ## `For 24/7 Activation`
 ```bash
 npm i -g pm2 && pm2 start index.js && pm2 save && pm2 logs
 ```
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fmikhaiel0%2FJIMBRU-v4.1.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fmikhaiel0%2FJIMBRU-v4.1?ref=badge_large)
