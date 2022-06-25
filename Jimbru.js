@@ -2727,7 +2727,7 @@ case 'webtonsearch': case 'webtoon':
                 var displaynye = q.split('|')[1] || `mikhaiel.id`
                 var copynye = q.split('|')[2] || `Jimbru test`
                 const menuButa = [
-                {index: 1, urlButton: {displayText: `${displaynye}`, url: www.whatsapp.com/otp/copy/'+copynye}},
+                {index: 1, urlButton: {displayText: `${displaynye}`, url: 'https://www.whatsapp.com/otp/copy/'+copynye}},
                 ]
                 await JimbruOffical.sendMessage(from, { text: `${captionnye}`, templateButtons: menuButa, footer: `Mikhaiel` }) break
 
