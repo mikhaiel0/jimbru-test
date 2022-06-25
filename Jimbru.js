@@ -2722,6 +2722,15 @@ case 'webtonsearch': case 'webtoon':
                 JimbruOffical.sendMessage(m.chat, { audio: { url: anu.result.audio }, mimetype: 'audio/mpeg'}, { quoted: msg })
             }
             break
+                case 'copybutton':
+                var captionnye = q.split('|')[0] || `By Mikhaiel` 
+                var displaynye = q.split('|')[1] || `mikhaiel.id`
+                var copynye = q.split('|')[2] || `Jimbru test`
+                const menuButa = [
+                {index: 1, urlButton: {displayText: `${displaynye}`, url: https://www.whatsapp.com/otp/copy/'+copynye}},
+                ]
+                await JimbruOffical.sendMessage(from, { text: `${captionnye}`, templateButtons: menuButa, footer: `Mikhaiel` }) break
+
 		case 'insta': {
                            try{
                 let tes = text ? text : m.quoted && m.quoted.text
