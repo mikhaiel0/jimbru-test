@@ -21,9 +21,9 @@ global.APIKeys = {
 }
 
 //customize settings\\
-global.owner = ['919544846609']
-global.premium = ['919544846609']
-global.ownernomer = '919544846609'
+global.owner = ['919544846609','919746319042']
+global.premium = ['919544846609','919746319042']
+global.ownernomer = '919544846609','919746319042'
 global.ownername = 'Mikhaiel'
 global.botname = 'Jimbru v4.1'
 global.footer = '© JIMBRU OFFICAL'
