@@ -1,5 +1,9 @@
 FROM node:lts-buster
 
+RUN git clone https://github.com/mikhaiel0/JIMBRU-v4.1 /root/Mikhaiel 
+
+WORKDIR /root/Mikhaiel/
+
 RUN apt-get update && \
   apt-get install -y \
   ffmpeg \
@@ -11,5 +15,10 @@ RUN apt-get update && \
 
 RUN npm install -g npm@8.11.0
 
-CMD ["npm", "start"]
+RUN npm install -g nodemon 
 
+RUN npm install -g forever
+
+RUN npm i cfonts
+
+CMD ["npm", "start"]
