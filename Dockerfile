@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN npm install
+RUN npm install -g npm@8.11.0
 
 COPY . .
 
