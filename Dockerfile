@@ -8,8 +8,10 @@ RUN apt-get update && \
   apt-get upgrade -y && \
   rm -rf /var/lib/apt/lists/*
 
+COPY package.json .
 
-RUN npm install -g npm@8.11.0
-RUN npm audit fix --force
+RUN npm install
 
-CMD ["npm", "start"]
+COPY . .
+
+CMD ["node", "."]
