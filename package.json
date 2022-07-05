@@ -18,7 +18,7 @@
     "bot-md",
     "multi-device"
   ],
-  "author": "Xeon.",
+  "author": "Mikhaiel",
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "git+https://github.com/adiwajshing/Baileys.git",
