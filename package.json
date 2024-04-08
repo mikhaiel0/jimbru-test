@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "WhatsApp Using Lib Baileys Multi Device",
   "main": "index.js",
-  "type": "module", // Changed to "module" for ECMAScript modules support
+  "type": "module", // Change "commonjs" to "module"
   "scripts": {
     "start": "node index.js"
   },
@@ -21,7 +21,7 @@
   "author": "Mikhaiel",
   "license": "MIT",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.5.0", // Changed to the latest version
+    "@adiwajshing/baileys": "^4.5.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "awesome-phonenumber": "^2.64.0",
     "@bochilteam/scraper": "^0.0.81",
