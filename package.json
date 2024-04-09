@@ -21,7 +21,7 @@
   "author": "Mikhaiel",
   "license": "MIT",
   "dependencies": {
-    "@adiwajshing/baileys": "^4.5.0",
+    "baileys": "git+https://github.com/WhiskeySockets/Baileys.git",
     "@adiwajshing/keyed-db": "^0.2.4",
     "awesome-phonenumber": "^2.64.0",
     "@bochilteam/scraper": "^0.0.81",
