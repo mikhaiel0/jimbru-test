@@ -1,75 +1,66 @@
 //═══════════════════════════════════════════════════════//
-//If you want to recode, reupload
-//or copy the codes/script,
-//pls give credit
-//no credit? i will take action immediately
-//© 2022 Xeon Bot Inc. Doge Bot 
-//Thank you to Lord Buddha, Family and Myself
 //════════════════════════════//
 
 const fs = require('fs')
 const chalk = require('chalk')
 
-//Api Website\\
-global.APIs = {
-	zenz: 'https://zenzapis.xyz',
-}
+//session
+global.sessionid ='ur session id'
 
-//Api Key\\
-global.APIKeys = {
-	'https://zenzapis.xyz': '2D8C144E4C', //credit goes to sanzy yt, if api key expire, buy it and put it here?\\
-}
+//owmner v card
+global.ytname = "YT: Xeon" //ur yt chanel name
+global.socialm = "insta : https://instagram.com/the_real_mikhaiel" //ur github or insta name
+global.location = "India, Kerala, Pathanamthitta" //ur location
 
-//customize settings\\
-global.owner = ['919544846609','919746319042']
-global.premium = ['919544846609','919746319042']
-global.ownernomer = '919544846609','919746319042'
-global.ownername = 'Mikhaiel'
-global.botname = 'Jimbru v4.1'
-global.footer = '© JIMBRU OFFICAL'
-global.ig = 'https://github.com/Mikhaiel'
-global.region = 'India, southwestern, kerala'
-global.sc = 'https://github.com/Mikhaiel/Jimbru v4.1'
-global.myweb = 'https://instagram.com/the_real_mikhaiel'
-global.packname = 'Made By'
-global.author = 'Jimbru v4.1'
-global.sessionName = 'session'
-global.prefa = ['','!','.']
-global.sp = '⭔'
+//new
+global.botname = 'Call Me Jimbru' //ur bot name
+global.ownernumber = '919544846609' //ur owner number
+global.ownername = 'Mikhaiel' //ur owner name
+global.websitex = "https://github.com/Mikhaiel/Jimbru v4.1"
+global.wagc = "https://whatsapp.com/channel"
+global.themeemoji = '🪀'
+global.wm = "Jimbru Bot Inc."
+global.botscript = 'https://github.com/Mikhaiel/jimbru-returns' //script link
+global.packname = "Sticker By"
+global.author = "Jimbru dev by mikhaiel"
+global.creator = "919544846609@s.whatsapp.net"
+global.xprefix = '.'
+global.premium = ["919544846609"] // Premium User
+global.hituet = 0
+
+//bot sett
+global.typemenu = 'v8' // menu type 'v1' => 'v8'
+global.typereply = 'v2' // reply type 'v1' => 'v3'
+global.autoblocknumber = '92' //set autoblock country code
+global.antiforeignnumber = '91' //set anti foreign number country code
+global.welcome = false //welcome/left in groups
+global.anticall = false //bot blocks user when called
+global.autoswview = false //auto status/story view
+global.adminevent = false //show promote/demote message
+global.groupevent = false //show update messages in group chat
+//msg
 global.mess = {
-    success: 'Done ✓',
-    admin: 'This Feature Is Only For Admin!',
-    botAdmin: 'Bot Must Be Admin First!',
-    owner: 'This Feature Is Only For Owner!',
-    group: 'Feature Used Only For Groups!',
-    private: 'Features Used Only For Private Chat!',
-    bot: 'This Feature Is Only For Bot',
-    wait: 'In Process...',
-    error: 'Error! Maybe Api Key Is Expired🤔!',
-    endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
+	limit: 'Your limit is up!',
+	nsfw: 'Nsfw is disabled in this group, Please tell the admin to enable',
+    done: 'Done✓',
+    error: 'Error!',
+    success: 'Here you go!'
 }
-    global.limitawal = {
-    premium: "Infinity",
-    free: 999999,
-    monayawal: 1000
-}
-   global.rpg = {
-   darahawal: 100,
-   besiawal: 15,
-   goldawal: 10,
-   emeraldawal: 5,
-   umpanawal: 5,
-   potionawal: 1
-}
+//thumbnail
 global.thumb = fs.readFileSync('./Media/Jimbru.jpg')
-global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
-global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=smurfs-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
+
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
-	fs.unwatchFile(file)
-	console.log(chalk.redBright(`Update'${__filename}'`))
-	delete require.cache[file]
-	require(file)
+    fs.unwatchFile(file)
+    console.log(chalk.redBright(`Update'${__filename}'`))
+    delete require.cache[file]
+    require(file)
 })
+//customize settings\\
+//global.owner = ['919544846609','919746319042']
+//global.premium = ['919544846609','919746319042']
+//global.ownernomer = '919544846609','919746319042'
+//global.ownername = 'Mikhaiel'
+//global.botname = 'Jimbru v4.1'
+//global.footer = '© JIMBRU OFFICAL'
+
